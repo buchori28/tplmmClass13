@@ -4,7 +4,7 @@ import { Content, Text, List, ListItem, Icon, Container, Left, Badge } from "nat
 import styles from "./styles";
 
 const drawerCover = require("../../assets/drawer-cover.png");
-const drawerImage = require("../../assets/logo-smart-academy.png");
+const drawerLogo = require("../../assets/drawer-logo.png");
 const datas = [
       { name: "Home",route: "Home",icon: "home",bg: "#C5F442" },
       { name: 'CATEGORY 1', desc:'lorem ipsum', code: '#1abc9c', icon: 'car', screen: 'EventPage' }, 
@@ -33,7 +33,7 @@ class SideBar extends Component
           style={{ flex: 1, backgroundColor: "#fff", top: -1 }}
         >
           <Image source={drawerCover} style={styles.drawer_cover} />
-          <Image square style={styles.drawer_image} source={drawerImage} />
+          <Image square style={styles.drawer_image} source={drawerLogo} />
 
           <List
             dataArray={datas}
